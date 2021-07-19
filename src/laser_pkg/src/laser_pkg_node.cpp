@@ -19,9 +19,11 @@ int main(int argc, char **argv)
     sensor_msgs::LaserScanConstPtr dist;
 
 //PID Variables
-    double kp,ki,kd,dt=0.20;
+    double kp=2.0,ki=0.1,kd=1.0,dt=0.20;
     double error=0.0,error_new,p_error,i_error,d_error;
-    double inp,basespeed=5.0;
+    double inp;
+    std_msgs::Float32 basespeed,pubspeed;
+    basespeed.data=2.0;
     
 
     ros::init(argc,argv,"scan");
@@ -48,9 +50,13 @@ else if(i_error<-5.0)
 }
 
 inp=p_error+i_error+d_error;
+pubspeed.data=basespeed.data-inp;
+left_wheel.publish(pubspeed);
+pubspeed.data=basespeed.data+inp;
+right_wheel.publish(pubspeed);
 
-left_wheel.publish(basespeed-inp);
-right_wheel.publish(basespeed+inp);
+//ROS_INFO("%f", basespeed-inp);
+//ROS_INFO("%f", basespeed+inp);
 
 ros::spin();
 }

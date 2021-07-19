@@ -4,17 +4,17 @@
 
 
 
-  <xacro:include filename="$(find ricky_description)/urdf/ricky.gazebo" />
-  <xacro:include filename="$(find ricky_description)/urdf/materials.xacro" />
-  <xacro:include filename="$(find ricky_description)/urdf/macros.xacro" />
+  <xacro:include filename="$(find ricky_description)/urdf/ricky.gazebo"/>
+  <xacro:include filename="$(find ricky_description)/urdf/materials.xacro"/>
+  <xacro:include filename="$(find ricky_description)/urdf/macros.xacro"/>
 
 
   <link name='chassis'>
     <pose>0 0 0.1 0 0 0</pose>
 
     <inertial>
-      <mass value="10.0"/>
-      <origin xyz="0.0 0 0.1" rpy=" 0 0 0"/>
+      <mass value="20.0"/>
+      <origin xyz="0.0 0 0.0" rpy=" 0 0 0"/>
       <inertia
           ixx="0.5" ixy="0" ixz="0"
           iyy="1.0" iyz="0"
@@ -24,14 +24,14 @@
 
     <collision name='collision'>
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size=".4 .4 .1"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size=".4 .4 .1"/>
       </geometry>
     </visual>
 
