@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/melodic/include/**",
+        "/xowl/include/**",
+        "~repotest/devel/include"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

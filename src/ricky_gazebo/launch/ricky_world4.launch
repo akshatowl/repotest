@@ -4,22 +4,22 @@
     <arg name="debug" default="false"/>
     <arg name="gui" default="false"/>
     <arg name="pause" default="false"/>
-    <!-- Change "walls.world to line.world" if you need a long straight wall -->
-    <arg name="world" default="$(find ricky_gazebo)/world/ricky.world" />
+    <arg name="world" default="$(find ricky_gazebo)/worlds/wallworld.world"/>
 
     <!-- Including gazebo_ros launcher from package-->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="debug" value="$(arg debug)" />
-        <arg name="gui" value="true" />
-        <arg name="paused" value="$(arg pause)" />
-        <arg name="world_name" value="$(arg world)" />
-        <arg name="use_sim_time" value="true" />
+    
+        <arg name="debug" value="$(arg debug)"/>
+        <arg name="gui" value="true"/>
+        <arg name="paused" value="$(arg pause)"/>
+        <arg name="world_name" value="$(arg world)"/>
+        <arg name="use_sim_time" value="true"/>
     </include>
     <!-- spawning the bot in gazebo and converting to urdf -->
     <param name="robot_description" command="$(find xacro)/xacro $(find ricky_description)/urdf/ricky.xacro"/>
-    <arg name="x" value="0" />
-    <arg name="y" value="7" />
-    <arg name="z" value="1" />
+    <arg name="x" value="7" />
+    <arg name="y" value="1" />
+    <arg name="z" value="0" />
     <node name="ricky_spawn" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model ricky -x $(arg x) -y $(arg y) -z $(arg z)" />
 
     <!-- Rviz nodes -->
@@ -28,5 +28,10 @@
     
     <!-- Remove the below line if you don't want RViz to openbyy default -->
     <!--node name="rviz" pkg="rviz" type="rviz" required="true" /-->
+    <!-- <rosparam file="$(find ricky_description)/config/diff_drive.yaml" command="load"/> -->
+
+    <!-- Controller manager for ricky -->
+    <!-- <node name="ricky_controller_manager" pkg="controller_manager" type="spawner"  -->
+          <!-- respawn="false" output="screen" args="mobile_base_controller"/> -->
      
 </launch>
