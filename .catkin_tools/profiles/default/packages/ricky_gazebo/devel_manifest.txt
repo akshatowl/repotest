@@ -1,5 +1,0 @@
-ricky_gazebo
-/home/xowl/repotest/devel/.private/ricky_gazebo/cmake.lock /home/xowl/repotest/devel/./cmake.lock
-/home/xowl/repotest/devel/.private/ricky_gazebo/lib/pkgconfig/ricky_gazebo.pc /home/xowl/repotest/devel/lib/pkgconfig/ricky_gazebo.pc
-/home/xowl/repotest/devel/.private/ricky_gazebo/share/ricky_gazebo/cmake/ricky_gazeboConfig.cmake /home/xowl/repotest/devel/share/ricky_gazebo/cmake/ricky_gazeboConfig.cmake
-/home/xowl/repotest/devel/.private/ricky_gazebo/share/ricky_gazebo/cmake/ricky_gazeboConfig-version.cmake /home/xowl/repotest/devel/share/ricky_gazebo/cmake/ricky_gazeboConfig-version.cmake

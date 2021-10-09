@@ -1,2 +1,0 @@
-laser_pkg:ricky_description:ricky_gazebo
--DCATKIN_DEVEL_PREFIX=/home/xowl/repotest/devel -DCMAKE_INSTALL_PREFIX=/home/xowl/repotest/install -G Unix Makefiles

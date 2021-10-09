@@ -1,6 +1,0 @@
-laser_pkg
-/home/xowl/repotest/devel/.private/laser_pkg/cmake.lock /home/xowl/repotest/devel/./cmake.lock
-/home/xowl/repotest/devel/.private/laser_pkg/lib/pkgconfig/laser_pkg.pc /home/xowl/repotest/devel/lib/pkgconfig/laser_pkg.pc
-/home/xowl/repotest/devel/.private/laser_pkg/lib/laser_pkg/laser_pkg_node /home/xowl/repotest/devel/lib/laser_pkg/laser_pkg_node
-/home/xowl/repotest/devel/.private/laser_pkg/share/laser_pkg/cmake/laser_pkgConfig.cmake /home/xowl/repotest/devel/share/laser_pkg/cmake/laser_pkgConfig.cmake
-/home/xowl/repotest/devel/.private/laser_pkg/share/laser_pkg/cmake/laser_pkgConfig-version.cmake /home/xowl/repotest/devel/share/laser_pkg/cmake/laser_pkgConfig-version.cmake
