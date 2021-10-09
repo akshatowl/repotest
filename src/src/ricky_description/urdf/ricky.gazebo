@@ -14,11 +14,7 @@
       <publishTf>1</publishTf>
       <rosDebugLevel>na</rosDebugLevel>
       <wheelAcceleration>0</wheelAcceleration>
-<<<<<<< HEAD
-      <wheelTorque>5</wheelTorque>
-=======
       <wheelTorque>6</wheelTorque>
->>>>>>> 8ddc6f9780860601546042c62b2a6a0dcf28b242
       <torque>20</torque>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>

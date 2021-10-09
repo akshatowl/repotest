@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- Arguments to launch the world in Gazebo -->
+    <arg name="debug" default="false"/>
+    <arg name="gui" default="false"/>
+    <arg name="pause" default="false"/>
+    <arg name="world" default="$(find ricky_gazebo)/worlds/wallworld.world"/>
+
+    <!-- Including gazebo_ros launcher from package-->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    
+        <arg name="debug" value="$(arg debug)"/>
+        <arg name="gui" value="true"/>
+        <arg name="paused" value="$(arg pause)"/>
+        <arg name="world_name" value="$(arg world)"/>
+        <arg name="use_sim_time" value="true"/>
+    </include>
+    <!-- spawning the bot in gazebo and converting to urdf -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find ricky_description)/urdf/ricky.xacro"/>
+    <arg name="x" value="7" />
+    <arg name="y" value="1" />
+    <arg name="z" value="0" />
+    <node name="ricky_spawn" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model ricky -x $(arg x) -y $(arg y) -z $(arg z)" />
+
+    <!-- Rviz nodes -->
+    <node name="joint_state_publisher" type="joint_state_publisher" pkg="joint_state_publisher"></node>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    
+    <!-- Remove the below line if you don't want RViz to openbyy default -->
+    <!--node name="rviz" pkg="rviz" type="rviz" required="true" /-->
+     
+</launch>

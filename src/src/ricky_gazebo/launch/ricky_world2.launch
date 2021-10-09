@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+  <launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find ricky_gazebo)/worlds/ricky_gazebo.world"/>
+    <!-- more default parameters can be changed here -->
+  </include>
+  
+  <param name="robot_description" command="$(find xacro)/xacro $(find ricky_description)/urdf/ricky.xacro"/>
+  
+  <node name="ricky_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model ricky" />
+
+   
+  
+</launch>

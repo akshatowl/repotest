@@ -13,22 +13,13 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   sensor_msgs
   std_msgs
-  geometry_msgs
 )
 
-<<<<<<< HEAD
 ## generate_messages(
 ##	DEPENDENCIES
 ##	std_msgs
 ##	sensor_msgs
 ##)
-=======
-generate_messages(
-	DEPENDENCIES
-	std_msgs
-	sensor_msgs
-)
->>>>>>> 8ddc6f9780860601546042c62b2a6a0dcf28b242
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -123,14 +114,9 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES laser_pkg
-<<<<<<< HEAD
-  CATKIN_DEPENDS
-
-
-=======
   # CATKIN_DEPENDS 
+  
    
->>>>>>> 8ddc6f9780860601546042c62b2a6a0dcf28b242
 #  DEPENDS system_lib
 )
 
@@ -153,26 +139,15 @@ include_directories(
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
-<<<<<<< HEAD
- # add_dependencies(custom_node custom_node_gencfg)
-=======
 ## add_dependencies(laser_pkg_node laser_pkg_gencfg)
->>>>>>> 8ddc6f9780860601546042c62b2a6a0dcf28b242
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-<<<<<<< HEAD
-add_executable(custom_node src/custom_node.cpp)
-target_link_libraries(custom_node ${catkin_LIBRARIES})
-# add_dependencies(laser_pkg laser_pkg_gencpp)
-=======
-add_executable(laser_pkg src/laser_pkg_node.cpp)
-target_link_libraries(laser_pkg
-   ${catkin_LIBRARIES}
- )
-add_dependencies(laser_pkg laser_pkg_gencpp)
->>>>>>> 8ddc6f9780860601546042c62b2a6a0dcf28b242
+add_executable(laser_pkg_node src/laser_pkg_node.cpp)
+target_link_libraries(laser_pkg_node ${catkin_LIBRARIES})
+ 
+## add_dependencies(laser_pkg laser_pkg_gencpp)
 
 
 ## Rename C++ executable without prefix
@@ -186,15 +161,9 @@ add_dependencies(laser_pkg laser_pkg_gencpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-<<<<<<< HEAD
-# target_link_libraries(laser_pkg
-#    ${catkin_LIBRARIES}
-#  )
-=======
 ## target_link_libraries(laser_pkg_node
 ##   ${catkin_LIBRARIES}
 ## )
->>>>>>> 8ddc6f9780860601546042c62b2a6a0dcf28b242
 
 #############
 ## Install ##
