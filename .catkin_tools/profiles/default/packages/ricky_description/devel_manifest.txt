@@ -1,5 +1,0 @@
-ricky_description
-/home/xowl/repotest/devel/.private/ricky_description/cmake.lock /home/xowl/repotest/devel/./cmake.lock
-/home/xowl/repotest/devel/.private/ricky_description/lib/pkgconfig/ricky_description.pc /home/xowl/repotest/devel/lib/pkgconfig/ricky_description.pc
-/home/xowl/repotest/devel/.private/ricky_description/share/ricky_description/cmake/ricky_descriptionConfig.cmake /home/xowl/repotest/devel/share/ricky_description/cmake/ricky_descriptionConfig.cmake
-/home/xowl/repotest/devel/.private/ricky_description/share/ricky_description/cmake/ricky_descriptionConfig-version.cmake /home/xowl/repotest/devel/share/ricky_description/cmake/ricky_descriptionConfig-version.cmake
