@@ -28,7 +28,6 @@ generate_messages(
 	std_msgs
 	sensor_msgs
 )
->>>>>>> 8ddc6f9780860601546042c62b2a6a0dcf28b242
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
