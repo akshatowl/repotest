@@ -150,7 +150,7 @@ include_directories(
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
  # add_dependencies(custom_node custom_node_gencfg)
-=======
+
 ## add_dependencies(laser_pkg_node laser_pkg_gencfg)
 
 ## Declare a C++ executable
