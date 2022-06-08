@@ -15,7 +15,7 @@
       <rosDebugLevel>na</rosDebugLevel>
       <wheelAcceleration>0</wheelAcceleration>
       <wheelTorque>5</wheelTorque>
-=======
+
       <wheelTorque>6</wheelTorque>
       <torque>20</torque>
       <commandTopic>cmd_vel</commandTopic>
