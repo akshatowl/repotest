@@ -1,0 +1,8 @@
+prefix=/home/xowl/repotest/devel
+
+Name: laser_pkg
+Description: Description of laser_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

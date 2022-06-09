@@ -1,0 +1,8 @@
+prefix=/home/xowl/repotest/devel
+
+Name: ricky_gazebo
+Description: Description of ricky_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -26,10 +26,11 @@ generate_messages(
 	DEPENDENCIES
 	std_msgs
 	sensor_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -40,7 +41,6 @@ generate_messages(
 ################################################
 ## Declare ROS messages, services and actions ##
 ################################################
-
 ## To declare and build messages, services or actions from within this
 ## package, follow these steps:
 ## * Let MSG_DEP_SET be the set of packages whose message types you use in
@@ -141,6 +141,10 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(custom_node src/custom_node.cpp)
+target_link_libraries(custom_node ${catkin_LIBRARIES})
+add_dependencies(custom_node laser_pkg_gencpp)
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/laser_pkg.cpp
@@ -156,15 +160,15 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(custom_node src/custom_node.cpp)
-target_link_libraries(custom_node ${catkin_LIBRARIES})
-# add_dependencies(laser_pkg laser_pkg_gencpp)
+# add_executable(custom_node src/custom_node.cpp)
+# target_link_libraries(custom_node ${catkin_LIBRARIES})
+#  add_dependencies(laser_pkg laser_pkg_gencpp)
 
-add_executable(laser_pkg src/laser_pkg_node.cpp)
-target_link_libraries(laser_pkg
-   ${catkin_LIBRARIES}
- )
-add_dependencies(laser_pkg laser_pkg_gencpp)
+# add_executable(laser_pkg src/laser_pkg_node.cpp)
+# target_link_libraries(laser_pkg
+#    ${catkin_LIBRARIES}
+#  )
+# add_dependencies(laser_pkg laser_pkg_gencpp)
 
 
 ## Rename C++ executable without prefix
@@ -238,5 +242,7 @@ add_dependencies(laser_pkg laser_pkg_gencpp)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
 
+# add_executable(custom_node src/custom_node.cpp)
+# target_link_libraries(custom_node ${catkin_LIBRARIES})
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)

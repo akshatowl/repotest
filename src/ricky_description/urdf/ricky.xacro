@@ -161,7 +161,7 @@
 
   <joint name="hokuyo_joint" type="fixed">
     <axis xyz="0 1 0"/>
-    <origin xyz="0 0 ${0.01+0.01+0.05}" rpy="0 0 0"/>
+    <origin xyz="-0.1 0 ${0.01+0.01+0.05}" rpy="0 0 0"/>
     <parent link="chassis"/>
     <child link="hokuyo_link"/>
   </joint>
@@ -176,10 +176,10 @@
       <ray>
         <scan>
           <horizontal>
-            <samples>360</samples>
+            <samples>720</samples>
             <resolution>1</resolution>
-            <min_angle>-3.141592653589793238</min_angle>
-            <max_angle>3.141592653589793238</max_angle>
+            <min_angle>1.57079632679</min_angle>
+            <max_angle>4.71238898038</max_angle>
           </horizontal>
         </scan>
         <range>
