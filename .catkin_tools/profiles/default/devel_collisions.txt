@@ -1,1 +1,1 @@
-/home/xowl/repotest/devel/./cmake.lock 6
+/home/xowl/repotest/devel/./cmake.lock 8

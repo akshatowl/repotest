@@ -137,13 +137,13 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
 add_executable(custom_node src/custom_node.cpp)
 target_link_libraries(custom_node ${catkin_LIBRARIES})
-add_dependencies(custom_node laser_pkg_gencpp)
+# add_dependencies(custom_node laser_pkg_gencpp)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

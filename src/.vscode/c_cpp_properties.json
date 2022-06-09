@@ -1,17 +1,18 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/opt/ros/melodic/include/**",
-        "/xowl/include/**",
-        "~repotest/devel/include"
-      ],
-      "name": "ROS"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/opt/ros/melodic/include/**",
+                "/xowl/include/**",
+                "~/repotest/devel/include"
+            ],
+            "name": "ROS",
+            "configurationProvider": "go2sh.cmake-integration"
+        }
+    ],
+    "version": 4
 }
