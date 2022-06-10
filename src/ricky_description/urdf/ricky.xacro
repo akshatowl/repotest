@@ -24,14 +24,14 @@
 
     <collision name='collision'>
       <geometry>
-        <box size=".4 .4 .1"/>
+        <box size=".4 .25 .1"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".4 .4 .1"/>
+        <box size=".4 .25 .1"/>
       </geometry>
     </visual>
 
@@ -63,7 +63,7 @@
   
  
   <link name="left_wheel">
-    <!--origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/-->
+    <!-- <origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/> -->
     <collision name="collision">
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
@@ -178,8 +178,8 @@
           <horizontal>
             <samples>720</samples>
             <resolution>1</resolution>
-            <min_angle>1.57079632679</min_angle>
-            <max_angle>4.71238898038</max_angle>
+            <min_angle>1.57079994678</min_angle>
+            <max_angle>4.71239984034</max_angle>
           </horizontal>
         </scan>
         <range>

@@ -4,6 +4,7 @@
 #include <geometry_msgs/Twist.h>
 #include <unistd.h>
 
+double kp=2.0,kd=0.07;
 class laser_node
 {
     ros::Publisher pub;
@@ -28,9 +29,20 @@ public:
 
     void callback(const sensor_msgs::LaserScan::ConstPtr &msg)
     {
-         double dist=msg->ranges[30];
-         ROS_INFO("distance: %f",dist);
-         move.linear.x=-5.0;
+         double dist_right=msg->ranges[0];
+         double dist_left=msg->ranges[719];
+         double error=dist_left-dist_right;
+         double p_error,d_error,old_error=0.0;
+         double effort;
+         // ---- Proportional logic-------//
+         p_error=kp*error;
+         d_error=(error-old_error)/1.0; // can sample by rate as well
+
+         //---- Effort ----- //
+         effort=kp*p_error+kd*d_error;
+         ROS_INFO("effort: %f error: %f ", effort,error);
+        //  move.linear.x=-2.0;  //base speed 
+         move.angular.z=4.0;  //angular heading correction
          pub.publish(move);
          usleep(10);
 
