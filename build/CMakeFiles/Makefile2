@@ -1371,9 +1371,9 @@ clean: laser_pkg/CMakeFiles/laser_pkg_gennodejs.dir/clean
 # Target rules for target laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir
 
 # All Build rule for target.
-laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/all: ricky_gazebo/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/all: laser_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/all: laser_pkg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/all: ricky_gazebo/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/build.make laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/depend
 	$(MAKE) -f laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/build.make laser_pkg/CMakeFiles/laser_pkg_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xowl/repotest/build/CMakeFiles --progress-num=14 "Built target laser_pkg_generate_messages_eus"
@@ -1437,9 +1437,9 @@ clean: laser_pkg/CMakeFiles/laser_pkg_geneus.dir/clean
 # Target rules for target laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir
 
 # All Build rule for target.
-laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/all: ricky_gazebo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/all: laser_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/all: laser_pkg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/all: ricky_gazebo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/build.make laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/depend
 	$(MAKE) -f laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/build.make laser_pkg/CMakeFiles/laser_pkg_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xowl/repotest/build/CMakeFiles --progress-num= "Built target laser_pkg_generate_messages_nodejs"

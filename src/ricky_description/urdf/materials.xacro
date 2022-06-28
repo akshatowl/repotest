@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <robot>
 
-  <material name="black">
+  <!-- <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
-  </material>
+  </material> -->
 
   <material name="blue">
     <color rgba="0.0 0.0 0.8 1.0"/>
@@ -21,11 +21,7 @@
     <color rgba="${255/255} ${108/255} ${10/255} 1.0"/>
   </material>
 
-  <material name="brown">
-    <color rgba="${222/255} ${207/255} ${195/255} 1.0"/>
-  </material>
-
-  <material name="red">
+    <material name="red">
     <color rgba="0.8 0.0 0.0 1.0"/>
   </material>
 
@@ -33,4 +29,17 @@
     <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
 
+	<material name="light_grey">
+      <color rgba="0.6 0.6 0.6 1"/>
+  </material>
+    
+  <material name="dark_grey">
+      <color rgba="0.3 0.3 0.3 1"/>
+  </material>
+
+	<material name="brown">
+	  <color rgba="${222/255} ${207/255} ${195/255} 1.0"/>
+	</material>
+
 </robot>
+

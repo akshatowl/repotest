@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins'
-export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
+export CMAKE_PREFIX_PATH="/home/xowl/repotest/devel:$CMAKE_PREFIX_PATH"
+export PATH='/opt/ros/melodic/bin:/usr/lib/ccache:/usr/lib/ccache:/home/xowl/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-6-2017-q2-update/bin:/home/xowl/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xowl/ardupilot/Tools/autotest:/home/xowl/ardupilot/Tools/autotest'
 export PWD='/home/xowl/repotest/build'
-export PYTHONPATH='/opt/ros/melodic/lib/python2.7/dist-packages'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/xowl/repotest/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/xowl/repotest/src:$ROS_PACKAGE_PATH"

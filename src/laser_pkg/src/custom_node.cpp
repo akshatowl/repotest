@@ -42,9 +42,14 @@ public:
          effort=kp*p_error+kd*d_error;
          ROS_INFO("effort: %f error: %f ", effort,error);
         //  move.linear.x=-2.0;  //base speed 
-         move.angular.z=4.0;  //angular heading correction
-         pub.publish(move);
-         usleep(10);
+         
+         
+             move.linear.x=double(-5.0);
+             move.angular.z=double(4.0);  //angular heading correction
+             pub.publish(move);
+             usleep(10);
+         
+        
 
     }
 };
@@ -60,7 +65,7 @@ void laser_node::loop_function()
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "laser_node");
-    laser_node custom_node(1000);
+    laser_node custom_node(100);
 
     ros::spin();
 
